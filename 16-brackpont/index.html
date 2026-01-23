@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --breakpoint-sm:700px;
+            --breakpoint-lg:900px;
+            --breakpoint-xl:1000px;
+            --breakpoint-big:1300px
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pink-500 text-xl lg:bg-red-500 sm:bg-green-500 mb:bg-orange-500 big:bg-blue-900 xl:bg-yellow-300">
+        this brackpoint working
+    </div>
+    
+</body>
+</html>
