@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @tailwind components;
+      @tailwind base;
+    @tailwind utilities;
+
+@layer components{
+    .btn-primary{
+        @apply bg-blue-600 p-3 hover:bg-blue-800 rounded
+    }
+    .back-ground{
+    @apply bg-blue-400 hover:bg-green-500 rounded
+}
+}
+@layer components{
+    .btn{
+        @apply bg-red-400 rounded hover:bg-red-700 text-white p-3
+    }
+        .btn-pri{
+        @apply bg-blue-400 rounded hover:bg-blue-700 text-white p-3
+    }
+
+            .btn-sec{
+        @apply bg-gray-400 rounded hover:bg-gray-700 text-white p-3
+    }
+
+        .btn-seu{
+        @apply bg-green-400 rounded hover:bg-green-700 text-white p-3
+    }
+
+     .btn-war{
+        @apply bg-yellow-400 rounded hover:bg-yellow-700 text-white p-3
+    }
+     .btn-info{
+        @apply bg-cyan-400 rounded hover:bg-cyan-700 text-white p-3
+    }
+
+    .btn-igt{
+        @apply bg-white rounded hover:bg-white border-slate-500 text-black p-3
+    }
+        .btn-dark{
+        @apply bg-black rounded  text-white  p-3
+    }
+
+        
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div>
+    <button class="bg-blue-400 rounded m-4 p-3 hover:bg-blue-800 ">Click me</button>
+    <button class ="btn-primary">Submit</button>
+     <button class ="btn-primary">Add</button>
+      <button class ="btn-primary">Go Next</button>
+
+      <h1 class ="back-ground">this the give value</h1>
+      </div>
+
+      <div class ="m-8 ">
+        <button class = "btn">success</button>
+                <button class = "btn-pri">primary</button>
+                        <button class = "btn-sec">secodany</button>
+                                <button class = "btn-seu">success</button>
+                                        <button class = "btn">Danger</button>
+                                                <button class = "btn-war">Warning</button>
+                                                        <button class = "btn-info">info</button>
+                                                                <button class = "btn-igt">light</button>
+                                                                        <button class = "btn-dark">dark</button>
+          <h4 class="text-blue-500 underline p-3 text-xl">Link</h4>                                                                      
+      </div>
+    
+</body>
+</html>
